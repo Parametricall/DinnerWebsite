@@ -46,3 +46,13 @@ class AddDin(View):
 
         context = {'form': form}
         return render(request, self.template_name, context)
+
+
+class DinnerDetailsView(View):
+    template_name = 'dinner/dinner_details.html'
+    form_class = AddOptions
+
+    def get(self, request):
+        form = self.form_class()
+        context = {'form': form}
+        return render(request, self.template_name, context)

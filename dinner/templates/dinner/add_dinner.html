@@ -1,0 +1,12 @@
+{% extends 'dinner/base_with_header.html' %}
+
+{% block body %}
+    <div class="row"></div>
+    <div class="container">
+        <form action="" method="post" style="background: blanchedalmond">
+            {% csrf_token %}
+            {{ form }}
+            <input class="btn right" type="submit" value="submit">
+        </form>
+    </div>
+{% endblock body %}

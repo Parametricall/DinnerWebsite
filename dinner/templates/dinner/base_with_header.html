@@ -1,0 +1,12 @@
+{% extends 'dinner/base.html' %}
+
+{% block body_header %}
+    <nav>
+        <div class="nav-wrapper">
+            <a href="{% url 'dinner:index' %}" class="brand-logo center">What's For dinner</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="{% url 'dinner:addDinner' %}">Add Dinner Option</a></li>
+            </ul>
+        </div>
+    </nav>
+{% endblock body_header %}

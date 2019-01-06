@@ -3,33 +3,25 @@
 <head>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    {% block head %}
+    {% endblock head %}
 </head>
 
 <body>
-<nav>
-    <div class="nav-wrapper">
-        <a href="#" class="brand-logo center">What's For dinner</a>
-    </div>
-</nav>
 
-<div class="row">
-    <div class="col s12 m4">
-        <div class="card horizontal">
-            <div class="card-image">
-                <img src="https://lorempixel.com/100/190/nature/6">
-            </div>
-            <div class="card-stacked">
-                <div class="card-content">
-                    <h3>Steak and Chips</h3>
-                    <p>List of ingredients</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{% block body_header %}
+{% endblock body_header %}
+
+{% block body %}
+{% endblock body %}
+
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+{% block scripts %}
+{% endblock scripts %}
 
 </body>
 </html>

@@ -5,5 +5,6 @@ from . import views
 app_name = 'dinner'
 
 urlpatterns = [
-    path('', views.index, name='index')
+    path('', views.Homepage.as_view(), name='index'),
+    path('add/', views.AddDin.as_view(), name='addDinner')
 ]
